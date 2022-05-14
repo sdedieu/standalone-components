@@ -1,0 +1,79 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+.slides {
+  @apply text-kzn-teal;
+}
+
+h2 {
+  @apply text-4xl md:text-7xl !important;
+}
+
+h4 {
+  @apply my-2 !important;
+}
+
+div.slide-cover {
+  @apply flex flex-col h-full content-center justify-around;
+}
+
+div.slide-content {
+  @apply flex flex-col h-full content-center bg-white;
+}
+
+div.slide-title {
+  @apply flex-initial bg-gradient-to-r from-kzn-apple via-kzn-teal to-kzn-cyan py-4;
+}
+
+div.slide-body {
+  @apply flex-grow;
+}
+
+div.slide-content img.schema-full-screen {
+   max-height: calc(100vh - 18rem);
+}
+
+img.m0{
+  @apply m-0 !important;
+}
+
+pre {
+  @apply m-0 flex-1 flex relative text-sm w-fit max-w-full shadow-none !important;
+}
+
+code {
+  @apply h-fit min-h-0 w-full px-6 shadow-inner hover:shadow-2xl rounded-md !important;
+}
+
+div.cover-container {
+  @apply flex flex-row grow items-center justify-evenly bg-cover bg-background bg-center;
+}
+
+div.cover-container img {
+  @apply w-96;
+}
+
+div.code-col-grid {
+  @apply py-4
+  grid
+  md:gap-4
+  gap-2
+  grid-cols-1
+  md:grid-cols-2
+  grow
+  justify-items-center;
+}
+
+div.code-col-grid.single-col {
+  @apply md:grid-cols-1;
+}
+
+div.code-col-grid div.code-col {
+  @apply flex flex-col items-start justify-start justify-self-center;
+}
+
+div.code-col-grid div.code-col pre {
+  @apply flex-initial !important;
+}
