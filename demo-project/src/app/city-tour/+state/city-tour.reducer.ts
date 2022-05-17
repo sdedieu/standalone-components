@@ -35,6 +35,7 @@ export const reducer = createReducer(
   })),
   on(CityTourActions.loadCitiesFailure, (state, action) => ({
     ...state,
-    isLoading: false
+    isLoading: false,
+    cities: []
   }))
 );

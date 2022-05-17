@@ -1,5 +1,6 @@
 <div class="page">
     <h2>City Tours</h2>
+    <section class="search-section">
     <mat-form-field class="search-form-field" appearance="fill">
         <mat-label>Clearable input</mat-label>
         <input matInput type="text" [(ngModel)]="search" (ngModelChange)="dispatchSearch()">
@@ -7,6 +8,8 @@
           <mat-icon>close</mat-icon>
         </button>
       </mat-form-field>
+      <mat-checkbox [(ngModel)]="urgent" class="example-margin">Urgent !</mat-checkbox>
+    </section>
     <div class="grid">
       <mat-spinner *ngIf="isLoading$ | async" class="spinner"></mat-spinner>
         <app-city-card *ngFor="let city of cities$ | async" [city]="city"></app-city-card>

@@ -15,7 +15,6 @@ export class CityTourEffects {
   loadCities$ = createEffect(() =>
     this.actions$.pipe(
       ofType(CityTourActions.loadCities),
-      tap(console.log),
       switchMap(action => this.cityService.find(action.search, action.urgent)),
       map((cities: City[]) => CityTourActions.citiesLoaded({ cities })),
       catchError(err => of(CityTourActions.loadCitiesFailure()))
