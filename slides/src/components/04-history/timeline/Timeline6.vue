@@ -4,60 +4,56 @@
 <template>
   <div class="slide-content">
     <div class="slide-title">
-      <h5>Importing file</h5>
+      <h5>Modules timeline</h5>
     </div>
     <div class="slide-body">
       <div class="whitespace-nowrap overflow-x-hidden">
         <ol class="transition-all duration-1000 w-screen py-48">
           <li>
             <div>
-              <time>1934</time> At vero eos et accusamus et iusto odio
-              dignissimos ducimus qui blanditiis praesentium At vero eos et
-              accusamus et iusto odio dignissimos ducimus qui blanditiis
-              praesentium
+              <time>1996</time>
+              <img src="/src/assets/javascript-logo.png" class="logo w-24" />
             </div>
           </li>
           <li>
             <div>
-              <time>1937</time> Proin quam velit, efficitur vel neque vitae,
-              rhoncus commodo mi. Suspendisse finibus mauris et bibendum
-              molestie. Aenean ex augue, varius et pulvinar in, pretium non
-              nisi.
+              <time>2009</time>
+              CommonJS
+              <p class="m0 py-2 text-xs">
+                "What I’m describing here is not a technical problem. It’s a
+                matter of people getting together and making a decision to step
+                forward and start building up something bigger and cooler
+                together." <br />
+                <br />
+                — Kevin Dangoor
+              </p>
             </div>
           </li>
           <li>
             <div>
-              <time>1940</time> Proin iaculis, nibh eget efficitur varius,
-              libero tellus porta dolor, at pulvinar tortor ex eget ligula.
-              Integer eu dapibus arcu, sit amet sollicitudin eros.
+              <time>2009</time> 
+              <img src="/src/assets/nodejs-logo.png" class="logo w-32" />
             </div>
           </li>
           <li>
             <div>
-              <time>1943</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
+              <time>2010</time> 
+              <img src="/src/assets/angularjs-logo.png" class="logo w-32" />
+              v0.9.0
             </div>
           </li>
           <li>
             <div>
-              <time>1946</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
+              <time>2015</time> 
+              <img src="/src/assets/es6-logo.jpeg" class="logo w-32" />
             </div>
           </li>
           <li>
-            <div>
-              <time>1956</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
+            <div class="hidden">
             </div>
           </li>
           <li>
-            <div>
-              <time>1957</time> In mattis elit vitae odio posuere, nec maximus
-              massa varius. Suspendisse varius volutpat mattis. Vestibulum id
-              magna est.
+            <div class="hidden">
             </div>
           </li>
           <li></li>
@@ -111,5 +107,13 @@ ol li:nth-child(even) div::before {
 
 time {
   @apply block text-lg font-bold mb-2;
+}
+
+.logo {
+  @apply my-3 ml-16;
+}
+
+p.m0 {
+  @apply m-0;
 }
 </style>
